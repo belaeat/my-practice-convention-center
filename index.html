@@ -2,153 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- font linked here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Bootstrap demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- font linked here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <style>
-        * {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+  <!-- font-awesome cdn -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
+  <header>
 
-        <!-- Navbar here -->
+    <!-- Navbar here -->
 
-        <nav class="navbar navbar-expand-lg bg-body-light m-4 p-3">
-            <div class="container-fluid d-flex">
-                <a class="navbar-brand fs-3 fw-bold" href="#">Abacus Convention Center</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav fw-semibold me-4">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
-                        </li>
+    <nav class="navbar navbar-expand-lg bg-body-light m-4 p-3">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand fs-3 fw-bold" href="#">Abacus Convention Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fw-semibold me-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscribe</a>
+            </li>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    </header>
+  </header>
 
-    <main>
+  <main>
 
-        <!-- Banner-carousel -->
+    <!-- Banner-carousel -->
 
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
-                    next event</h1>
-                  <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
-                  <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
-                    next event</h1>
-                  <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
-                  <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
-                    next event</h1>
-                  <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
-                  <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
-                    next event</h1>
-                  <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
-                  <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
+              next event</h1>
+            <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+              consequat duis enim velit </p>
+            <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
           </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
+              next event</h1>
+            <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+              consequat duis enim velit </p>
+            <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
+              next event</h1>
+            <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+              consequat duis enim velit </p>
+            <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold fs-1 mb-3">The perfect venue for your
+              next event</h1>
+            <p class="mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+              consequat duis enim velit </p>
+            <button class="btn btn-light btn-lg mb-5 text-primary fw-bold">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-        <!-- precious moments -->
+    <!-- precious moments -->
 
-        <section>
+    <section class="d-flex gap-5 m-5 justify-content-center align-items-center">
+      <img src="images/wedding.png" alt="">
+      <div style="width: 503px; height: 218px;">
+        <h2 class="fw-bold mb-3">Every moment is Precious </h2>
+        <p class="fw-semibold mb-54">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+          officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <button class="btn btn-primary btn-lg fw-bold">Explore our album</button>
+      </div>
+    </section>
 
-        </section>
+    <!-- packages -->
 
-        <!-- packages -->
+    <section>
+      <div>
+        <h2 class="fw-bold mb-5 text-center">Our Packages</h2>
+        <!-- div>h1+h2+p*6+button.btn.btn-light.btn-lg.text-primary -->
+        <div class="d-flex justify-content-center">
+          <div>
+            <h1 class="fw-bold fs-1 mb-5">$300</h1>
+            <h2 class="fw-bold mb-4">Business Fair</h2>
+            <p>For most businesses event
+              like book fair, craft fair.</p>
+            <p>limited space access</p>
+            <p>Secuirty facility</p>
+            <p>event support</p>
+            <p>Decoration design</p>
+            <p>Per day bill</p>
+            <button class="btn btn-light btn-lg text-primary">Choose Plan</button>
+          </div>
+          <div>
+            <h1 class="fw-bold fs-1 mb-5">$500</h1>
+            <h2 class="fw-bold mb-4">Wedding Basic</h2>
+            <p>For most businesses event
+              like book fair, craft fair.</p>
+            <p>limited space access</p>
+            <p>Secuirty facility</p>
+            <p>event support</p>
+            <p>Decoration design</p>
+            <p>Per day bill</p>
+            <button class="btn btn-light btn-lg text-primary">Choose Plan</button>
+          </div>
+          <div>
+            <h1 class="fw-bold fs-1 mb-5">$800</h1>
+            <h2 class="fw-bold mb-4">Wedding Plus</h2>
+            <p>For most businesses event
+              like book fair, craft fair.</p>
+            <p>limited space access</p>
+            <p>Secuirty facility</p>
+            <p>event support</p>
+            <p>Decoration design</p>
+            <p>Per day bill</p>
+            <button class="btn btn-light btn-lg text-primary">Choose Plan</button>
+          </div>
+          <div>
+            <h1 class="fw-bold fs-1 mb-5">$1200</h1>
+            <h2 class="fw-bold mb-4">Corporate Event</h2>
+            <p>For most businesses event
+              like book fair, craft fair.</p>
+            <p>limited space access</p>
+            <p>Secuirty facility</p>
+            <p>event support</p>
+            <p>Decoration design</p>
+            <p>Per day bill</p>
+            <button class="btn btn-light btn-lg text-primary">Choose Plan</button>
+          </div>
+        </div>
+      </div>
 
-        <section>
+    </section>
 
-        </section>
+    <!-- clients testimonial -->
 
-        <!-- clients testimonial -->
+    <section>
 
-        <section>
+    </section>
 
-        </section>
+    <!-- faqs -->
 
-        <!-- faqs -->
+    <section>
 
-        <section>
+    </section>
 
-        </section>
+  </main>
 
-    </main>
+  <footer>
 
-    <footer>
-
-    </footer>
+  </footer>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
